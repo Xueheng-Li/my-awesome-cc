@@ -9,11 +9,11 @@ Explore and ultrathink to design a systematic multi-agent (up to 10 subagents), 
 
 Note:
 - Get the current Date and Time (Beijing time)
-- 创建临时工作目录 `.temp_work/` 作为临时工作空间
+- 创建临时工作目录 `mult_agent_tmp/task_{short task description}_yyyyddmmhh/` 作为临时工作空间
 - When assigning tasks to subagents, specify their input and output files explicitly
 - 每个子代理必须自己将处理结果立即保存到本地文件，不要返回给主代理！子代理自己马上保存，不要返回给主代理！
 - 严禁将子代理完整输出返回主代理；只返回状态摘要
-- 第一个本地输出文件：multi-agent execution plan 文档 `.temp_work/plan_{short task description}_{yyyyddmmhhmm}.md`
+- 第一个本地输出文件：multi-agent execution plan 文档 `mult_agent_tmp/task_{short task description}_yyyyddmmhh/plan.md`
 - The main/mother agent must allow all Read + Write + Bash tools for all sub-agents
 - Apply context engineering — main agent context is scarce
 - The execution plan must include (at minimum) these four phases, each with multiple agents (in parallel when possible):
